@@ -1,8 +1,6 @@
-chmod +x map.py red.py
 
-
-hdfs dfs -rm -r input.txt
-hdfs dfs -put input.txt input.txt
+-mapper "python3 map.py"
+-reducer "python3 red.py"
 
 hdfs dfs -rm -r output
 
